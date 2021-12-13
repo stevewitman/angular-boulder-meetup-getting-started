@@ -1,0 +1,26 @@
+.sidenav {
+  width: 175px;
+  background-color: rgb(0, 128, 0);
+  display: flex;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2rem 0;
+  width: 175px;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(0, 114, 0);;
+    color: white;
+  }
+}
