@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeatHomeModule } from './feat-home/feat-home.module';
 import { SharedModule } from './shared/shared.module';
@@ -11,6 +12,7 @@ import { FeatProductsModule } from './feat-products/feat-products.module';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FeatHomeModule,
     SharedModule,
     FeatAboutModule,
