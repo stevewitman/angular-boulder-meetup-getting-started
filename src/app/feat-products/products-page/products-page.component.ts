@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ProductsService } from 'src/app/core/services/products.service';
+
 import { Product } from '../product';
 
 @Component({
@@ -12,33 +14,10 @@ export class ProductsPageComponent implements OnInit {
 
   productsList: Product[] = [];
 
-  productsAvailable: Product[] = [
-    {
-      id: 1,
-      title: 'Desk',
-      retailPrice: 799.5,
-    },
-    {
-      id: 2,
-      title: 'Chair',
-      retailPrice: 350,
-    },
-    {
-      id: 3,
-      title: 'Chair Mat',
-      retailPrice: 49.95,
-    },
-    {
-      id: 4,
-      title: 'Trash Can',
-      retailPrice: 7.99,
-    },
-  ];
-
-  constructor() {}
+  constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
-    this.productsList = this.productsAvailable;
+    this.productsList = this.productsService.getProducts();
   }
 
   selectProduct(product: Product) {
