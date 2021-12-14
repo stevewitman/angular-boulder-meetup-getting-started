@@ -5,4 +5,21 @@ button {
   border-radius: 3px;
   padding: 6px;
   margin-left: 12px;
+  cursor: pointer;
+  &:hover {
+    background-color: green;
+    color: white;
+  }
+}
+
+.auth-container {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sign-out {
+  color: yellow;
+  border: 1px solid yellow;
 }

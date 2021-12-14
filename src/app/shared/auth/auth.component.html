@@ -1,2 +1,5 @@
-<button>Sign In</button>
-<button>Sign Up</button>
+<div class="auth-container">
+  <button *ngIf="!signedIn" (click)="onSignIn()">Sign In</button>
+  <button *ngIf="!signedIn" (click)="onSignUp()">Sign Up</button>
+  <button *ngIf="signedIn" (click)="onSignOut()" class="sign-out">Sign Out</button>
+</div>

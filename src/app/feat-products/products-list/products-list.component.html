@@ -1,1 +1,9 @@
-<p>products-list works!</p>
+<div class="container">
+  <ul>
+    <li *ngFor="let product of productsList">
+      <a (click)="selected.emit(product)">{{ product.title }}</a>
+    </li>
+  </ul>
+</div>
+
+
