@@ -1,7 +1,7 @@
 <div class="container">
   <ul>
     <li *ngFor="let product of productsList">
-      <a (click)="selected.emit(product)">{{ product.title }}</a>
+      <a (click)="selected.emit(product)">{{ product.title | uppercase }}</a>
     </li>
   </ul>
 </div>
